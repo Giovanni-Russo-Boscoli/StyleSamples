@@ -1,0 +1,52 @@
+﻿#mainSampleDiv {
+    margin: 2%;
+}
+
+
+
+#divDevices {
+    margin: 2%;
+}
+
+
+
+.itemDevice {
+    align-content: center;
+    max-width: 15% !important;
+    text-align: center;
+}
+
+
+
+fieldset {
+    padding: 0 2% 0 2%;
+    border: 1px solid #666;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #666;
+    padding-top: 10px;
+    text-align: center;
+    margin: 2%;
+}
+
+
+
+legend {
+    padding: 1%;
+    width: auto !important;
+    border: none !important;
+    background: #fff;
+    float: left;
+    margin-top: -3.5%;
+}
+
+
+
+fieldset > div {
+    margin: 2%;
+}
+
+
+
+fieldset > legend + * {
+    clear: both;
+}

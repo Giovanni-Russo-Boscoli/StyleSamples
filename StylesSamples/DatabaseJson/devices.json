@@ -1,0 +1,291 @@
+﻿[
+
+  {
+
+    "idDevice": "lampSink",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Lamp Sink",
+
+    "typeDevice": "lamp",
+
+    "currentState": "on",
+
+    "area": "kitchen",
+
+    "action": "onoff"
+
+  },
+
+  {
+
+    "idDevice": "lightKitchen",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Light Kitchen",
+
+    "typeDevice": "light",
+
+    "currentState": "off",
+
+    "area": "kitchen",
+
+    "action": "onoff"
+
+  },
+
+  {
+
+    "idDevice": "lampCooker",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Lamp Cooker",
+
+    "typeDevice": "lamp",
+
+    "currentState": "off",
+
+    "area": "kitchen",
+
+    "action": "onoff"
+
+  },
+
+  {
+
+    "idDevice": "lightBedroom",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Light Bedroom",
+
+    "typeDevice": "light",
+
+    "currentState": "off",
+
+    "area": "Bedroom",
+
+    "action": "onoff"
+
+  },
+
+  {
+
+    "idDevice": "lampBedroom",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Lamp Bedroom",
+
+    "typeDevice": "lamp",
+
+    "currentState": "off",
+
+    "area": "Bedroom",
+
+    "action": "onoff"
+
+  },
+
+  {
+
+    "idDevice": "lampBedroomCloset",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Lamp Bedroom Closet",
+
+    "typeDevice": "lamp",
+
+    "currentState": "off",
+
+    "area": "Bedroom",
+
+    "action": "onoff"
+
+  },
+
+  {
+
+    "idDevice": "lampBathroom",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Lamp Bathroom",
+
+    "typeDevice": "lamp",
+
+    "currentState": "off",
+
+    "area": "Bathroom",
+
+    "action": "onoff"
+
+  },
+
+  {
+
+    "idDevice": "lightBathroom",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Light Bathroom",
+
+    "typeDevice": "light",
+
+    "currentState": "off",
+
+    "area": "Bathroom",
+
+    "action": "onoff"
+
+  },
+
+  {
+
+    "idDevice": "LightOffice",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Light Office",
+
+    "typeDevice": "light",
+
+    "currentState": "off",
+
+    "area": "Office",
+
+    "action": "onoff"
+
+  },
+
+  {
+
+    "idDevice": "lampOffice",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Lamp Office",
+
+    "typeDevice": "lamp",
+
+    "currentState": "off",
+
+    "area": "Office",
+
+    "action": "onoff"
+
+  },
+
+  {
+
+    "idDevice": "gateGarage",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Gate Garage",
+
+    "typeDevice": "gate",
+
+    "currentState": "opened",
+
+    "area": "Garage",
+
+    "action": "openclose"
+
+  },
+
+  {
+
+    "idDevice": "lightGarage",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Light Garage",
+
+    "typeDevice": "light",
+
+    "currentState": "off",
+
+    "area": "Garage",
+
+    "action": "onoff"
+
+  },
+
+  {
+
+    "idDevice": "lampGarden",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Lamp Garden",
+
+    "typeDevice": "lamp",
+
+    "currentState": "off",
+
+    "area": "Garden",
+
+    "action": "onoff"
+
+  },
+
+  {
+
+    "idDevice": "lampBalcony",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Lamp Balcony",
+
+    "typeDevice": "lamp",
+
+    "currentState": "off",
+
+    "area": "Balcony",
+
+    "action": "onoff"
+
+  },
+
+  {
+
+    "idDevice": "lightDinningRoom",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Light Dinning Room",
+
+    "typeDevice": "light",
+
+    "currentState": "off",
+
+    "area": "Dinning Room",
+
+    "action": "onoff"
+
+  },
+
+  {
+
+    "idDevice": "genericDeviceUnknown",
+
+    "ipAddress": "190.168.0.18",
+
+    "description": "Generic Device Unknown",
+
+    "typeDevice": "generic",
+
+    "currentState": "off",
+
+    "area": "Dinning Room",
+
+    "action": "onoff"
+
+  }
+
+]

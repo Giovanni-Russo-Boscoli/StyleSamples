@@ -40,3 +40,4 @@ C:\Users\E7440 i7 16GB\source\repos\StyleSamples\StylesSamples\obj\Debug\netcore
 C:\Users\E7440 i7 16GB\source\repos\StyleSamples\StylesSamples\obj\Debug\netcoreapp2.0\StylesSamples.Views.pdb
 C:\Users\E7440 i7 16GB\source\repos\StyleSamples\StylesSamples\obj\Debug\netcoreapp2.0\StylesSamples.csproj.CopyComplete
 C:\Users\E7440 i7 16GB\source\repos\StyleSamples\StylesSamples\obj\Debug\netcoreapp2.0\StylesSamples.csprojAssemblyReference.cache
+C:\Users\E7440 i7 16GB\source\repos\StyleSamples\StylesSamples\obj\Debug\netcoreapp2.0\Razor\Views\Home\TablePoc.g.cshtml.cs

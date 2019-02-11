@@ -12,7 +12,7 @@ namespace StylesSamples.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View("TablePoc");
         }
 
         public IActionResult About()

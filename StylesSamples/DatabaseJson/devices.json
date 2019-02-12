@@ -2,7 +2,7 @@
 
   {
 
-    "idDevice": "lampSink",
+    "idDevice": "room lights",
 
     "ipAddress": "190.168.0.18",
 
@@ -10,7 +10,7 @@
 
     "typeDevice": "lamp",
 
-    "currentState": "on",
+    "currentState": "off",
 
     "area": "kitchen",
 

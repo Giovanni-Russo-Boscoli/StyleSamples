@@ -8,29 +8,16 @@
 
 });
 
-
-
 var imgLightOn = "/images/light_on.png";
-
 var imgLightOff = "/images/light_off.png";
-
 var imgLampOff = "/images/lamp_off.png";
-
 var imgLampOn = "/images/lamp_on.png";
-
 var imgGateClosed = "/images/gate_closed.png";
-
 var imgGateOpened = "/images/gate_opened.png";
-
 var imgGenericDeviceOff = "/images/genericDevice_off.png";
-
 var imgGenericDeviceOn = "/images/genericDevice_on.png";
-
 var btnShowDevicesByArea = "showDevicesByArea";
-
 var btnShowAllDevices = "showAllDevices";
-
-
 
 function registerClickDevice() {
 
@@ -44,30 +31,21 @@ function registerClickDevice() {
 
             $(this).attr("data-currentState", textQuestion_ImgDevice[2]);
 
+            callCommandByAjax($(this).attr("data-currentState"), $(this).attr("id"));
         }
 
         checkStateDevices();
 
     });
-
 }
 
-
-
 function identifyCommand(element) {
-
-
-
+        
     var textQuestion_ImgDevice = [];
-
     var titleDevice = $(element).attr("title");
-
     var typeDevice = $(element).attr("data-typeDevice");
-
     var currentState = $(element).attr("data-currentState");
-
-
-
+    
     switch (typeDevice) {
 
         case 'light': {
@@ -115,7 +93,6 @@ function identifyCommand(element) {
             }
 
             return textQuestion_ImgDevice;
-
         }
 
         case 'gate': {
@@ -170,8 +147,6 @@ function identifyCommand(element) {
 
 }
 
-
-
 function ReadDevicesFromJsonFile(_showByArea) {
 
     $.ajax({
@@ -206,10 +181,8 @@ function ReadDevicesFromJsonFile(_showByArea) {
 
 }
 
-
-
 function createDisplayDevicesShowByArea(devices, checkStateDevicesCallback) {
-    
+
     var qttDevicesPerRow = 6;
     var deviceLength = 0;
     var _html;
@@ -222,18 +195,18 @@ function createDisplayDevicesShowByArea(devices, checkStateDevicesCallback) {
     $.each(devices, function (i, item) {
 
         _html = "";
-        countDevices = 0;        
-                
+        countDevices = 0;
+
         _html += "<div class='row row'" + item.area + " id='row_" + i + "'>";
 
         _html += "<fieldset>";
 
         _html += "<legend>" + item.area + "</legend>";
-        
+
         deviceLength = $(item.devices).length;
 
         rows = Math.floor(deviceLength / qttDevicesPerRow) + (deviceLength % qttDevicesPerRow > 0 ? 1 : 0);//define how many rows will be necessary to create based in 12 columns[bootstrap]
-        
+
         for (i = 0; i < rows; i++) {
 
             _html += "<div class='row rowBtnControlDevicesByArea' id='rowBtnControlDevicesByArea_" + i + "'>";
@@ -293,8 +266,6 @@ function createDisplayDevicesShowByArea(devices, checkStateDevicesCallback) {
     checkStateDevicesCallback();
 }
 
-
-
 function createDisplayDevices(devices, checkStateDevicesCallback) {
 
     var qttDevicesPerRow = 6;
@@ -347,8 +318,6 @@ function createDisplayDevices(devices, checkStateDevicesCallback) {
     registerClickDevice();
     checkStateDevicesCallback();
 }
-
-
 
 function returnImgTypeDevice(typeDevice, currentState) {
 
@@ -414,8 +383,6 @@ function returnImgTypeDevice(typeDevice, currentState) {
 
 }
 
-
-
 function btnShowDevices() {
 
     $("#btnShowDevices").attr("data-showDevices", btnShowAllDevices);
@@ -449,8 +416,6 @@ function btnShowDevices() {
     });
 
 }
-
-
 
 function controlBtnsToggle() {
 
@@ -533,8 +498,6 @@ function controlBtnsToggle() {
     });
 
 }
-
-
 
 function toggleDevice(listDevices) {
 
@@ -632,8 +595,6 @@ function toggleDevice(listDevices) {
 
 }
 
-
-
 function checkStateDevices() {
 
 
@@ -648,4 +609,26 @@ function checkStateDevices() {
 
 
 
+}
+
+function callCommandByAjax(_command, _idDevice) {
+
+    var customViewModuleRequest = {
+        "command": _command,
+        "idDevice": _idDevice
+    };
+
+    //TODO: fix problems with CORS: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+    $.ajax({
+        type: "POST",
+        url: 'https://e661570b.ngrok.io/api/HomeAssistant/DeviceRequestCommandCustomViewModule',
+        data: customViewModuleRequest,
+        success: function (data) {
+            console.log(data);
+        },
+        error: function (xhr, status, error) {
+            alert("error: " + JSON.stringify(xhr));
+            //ToastrMessage("", "Something went wrong to load Tasks list!");
+        }
+    });
 }

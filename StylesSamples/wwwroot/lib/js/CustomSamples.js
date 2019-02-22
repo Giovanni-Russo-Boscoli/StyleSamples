@@ -621,7 +621,7 @@ function callCommandByAjax(_command, _idDevice) {
     //TODO: fix problems with CORS: No 'Access-Control-Allow-Origin' header is present on the requested resource.
     $.ajax({
         type: "POST",
-        url: 'https://e661570b.ngrok.io/api/HomeAssistant/DeviceRequestCommandCustomViewModule',
+        url: 'https://5f07b66b.ngrok.io/api/HomeAssistant/DeviceRequestCommandCustomViewModule',
         data: customViewModuleRequest,
         success: function (data) {
             console.log(data);
